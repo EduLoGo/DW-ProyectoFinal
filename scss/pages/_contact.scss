@@ -1,0 +1,43 @@
+.contenedor{
+    display: grid;
+    grid-template-areas:
+        "titulo map"
+        "form   map";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 8fr;
+    gap: 50px;
+    margin: 50px 75px;
+    .contacto__Titulo{
+        @include textoTit;
+        grid-area: titulo;
+        padding-left: 100px;
+    }
+    .form__contacto{
+        grid-area: form;
+        label{
+            @include textoDef;
+            color: white;
+        }
+        textarea{
+            height: 180px;
+        }
+        .botonReset{
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: map-get($coloresWeb, color4);
+        }
+        .botonEnviar{
+            @extend .botonReset;
+            background-color: map-get($coloresWeb, color3);
+        }
+    }
+    .mapsGoogle{
+        grid-area: map;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}

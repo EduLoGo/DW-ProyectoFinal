@@ -1,0 +1,43 @@
+.padre__index{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 15px;
+    .principal__texto{
+        margin: 50px 10px 50px 150px;
+        text-align:right;
+        .artista__nombre{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 75px;
+            font-weight: bold;
+            animation-duration: 1.5s;
+            color: map-get($coloresWeb, color3);
+            text-shadow: 0px 5px 10px map-get($coloresWeb,color2);
+        }
+        .artista__intro{
+            font-size: 25px;
+            font-family: 'PT Sans Caption', sans-serif;
+            animation-duration: 2s;
+            color: map-get($coloresWeb, color3);
+        }
+        .artista__fecha{
+            margin-top: 150px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            animation-duration: 2.5s;
+            color: map-get($coloresWeb, color1);
+            text-shadow: 2px 2px 10px map-get($coloresWeb,color3);
+        }
+    }
+    .principal__imagen{
+        margin: 50px 150px 150px 0px;
+        img{
+            border: 3px solid whitesmoke;
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

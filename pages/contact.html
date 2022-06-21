@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <!-- Link a la pagina de Estilos (CSS)-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Link Animaciones Texto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Titulo de la Web a Mostrar -->
+    <title>Dmensions™️ || Contacto</title>
+    <!-- Aplicando SEO -->
+    <meta name="description" content="Página Oficial de Dmensions™️ - ¡Contáctanos! Opina, sugerí o bien déjanos tu queja, ¡te leemos y daremos una respuesta!">
+    <meta name="keywords"  content="dmension, DJ, música, fiesta, evento, dance music">
+</head>
+<body>
+    <header>
+        <div class="nav__menu">
+            <a href="../index.html"><img src="../img/D-Logo.png" alt="Dmensions_Logo"></a>
+            <ul class="nav">
+                <a href="../index.html"><li>Inicio</li></a>
+                <a href="./upcoming.html"><li>Proximo Evento</li></a>
+                <a href="./lookingBack.html"><li>Eventos Anteriores</li></a>
+                <a href="./about.html"><li>Sobre Nosotros</li></a>
+                <a href="./contact.html"><li>Contacto</li></a>
+            </ul>
+        </div>
+    </header>
+    <main class="contenedor">
+        <div class="contacto__Titulo">
+            <h2>Contacto</h2>
+            <h5>Dejanos tu reclamo y/o sugerencia.</h5>
+        </div>
+        
+        <form class="form__contacto">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre y Apellido:</label>
+                <input type="text" required placeholder="Juan Perez" class="form-control" id="formName">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electronico:</label>
+                <input type="text" required placeholder="micorreo@dominio.com" class="form-control" id="formEmail">
+            </div>
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Telefono de Contacto:</label>
+                <input type="text" class="form-control" id="formPhone">
+            </div>
+            <div class="mb-3">
+                <label for="mesagge" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="formMsj"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Quiero suscribirme a las novedades</label>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="botonReset" type="reset">Borrar</button> <!-- class="btn btn-secondary" -->
+                <button class="botonEnviar">Enviar</button>
+            </div>
+        </form>
+
+        <div class="mapsGoogle">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.0146279277405!2d-58.38340900237658!3d-34.60379161292383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1654049605933!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__redes">
+            <span>Encontranos en las Redes Sociales:</span>
+            <ul class="footer__ul nav">
+                <a href="https://www.facebook.com" target="_blank"><img src="../img/Facebook.png" alt="Logo-Facebook"><li>Facebook</li></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../img/Instagram.png" alt="Logo-Instagram"><li>Instagram</li></a>
+            </ul>
+        </div>            
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

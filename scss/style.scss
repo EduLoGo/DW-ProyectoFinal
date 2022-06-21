@@ -1,0 +1,89 @@
+@import "./abstracts/variables";
+@import "./base/reset";
+@import "./mixins/mixins";
+
+@import "./layouts/body";
+@import "./layouts/header";
+@import "./layouts/footer";
+
+@import "./pages/index";
+@import "./pages/upcoming.scss";
+@import "./pages/lookingBack";
+@import "./pages/contact";
+@import "./pages/about";
+
+
+@media screen and (max-width: 768px) {
+    
+    /* Pagina Principal (Index.html) */
+    .nav__menu{
+        ul{
+            align-items: center;        
+            li{
+                display:flex;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    }
+    .padre__index{
+        display: block;
+        .principal__texto{
+            margin-right: 50px;
+            .artista__nombre{
+                font-size: 55px;
+            }
+            .artista__intro{
+                font-size: 20px;
+            }
+            .artista__fecha{
+                font-size: 45px;
+            }
+        }
+        .principal__imagen{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+}
+
+/* Media Query Display = Movil */
+@media screen and (max-width: 320px) {
+    /* Menu de Navegacion */
+    .nav__menu{
+        flex-direction: column;
+        ul{
+            display: flex;
+            justify-content: center;
+            width:100%;
+        }
+    }
+
+    /* Footer */
+    .footer__redes{
+        font-size: 12px;
+        .footer__ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    /* Pagina Principal (Index.html) */
+    
+    .padre__index{
+        display: flex;
+        flex-wrap: wrap;
+        .principal__texto{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 5px 20px 10px;
+            text-align:center;
+            font-size: 18px;
+        }
+        .principal__imagen{
+            margin: 10px 10px;
+        }
+    }
+
+    
+}

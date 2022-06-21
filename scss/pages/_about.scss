@@ -1,0 +1,21 @@
+.sobreNosotros{
+    margin: 50px 150px;
+    border-bottom: solid 2px black;
+    .sn__titulo{
+        @include textoTit;
+        margin: 50px 800px 50px 100px;
+    }
+    .sn__parrafo{
+        @include textoDef;
+        margin: 50px;    
+        
+    }
+    .sn_img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+}
+
+
+

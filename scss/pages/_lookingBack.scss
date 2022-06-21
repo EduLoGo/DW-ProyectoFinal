@@ -1,0 +1,30 @@
+.grid__eventosAnteriores{
+    display: grid;
+    grid-template-areas:"vid vid";
+    grid-gap: 5px;
+    .cont__eventosPasados{
+        grid-area: vid;
+        display: contents;
+        text-align: center;
+        .evento{
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+            margin: 20px 20px;
+            .textoEvento{
+                @include textoTit;
+                p{
+                    @include textoDef;
+                }
+                
+            }
+            .videoEvento{
+                width: auto;
+                iframe{    
+                    border-radius: 10px;
+                    height: 400px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

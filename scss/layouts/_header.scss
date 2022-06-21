@@ -1,0 +1,32 @@
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1 ;
+
+    .nav__menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        text-align: center;
+        
+        background-color: map-get($coloresWeb, color5);
+        img{
+            height: 40px;
+        }
+        ul{
+            li{
+                display: inline-block;
+                width:180px;
+                color: $textoMenu;
+                flex-basis: auto;
+                &:hover{
+                    /* background: #EC994B; */
+                    background: map-get($coloresWeb, color3);
+                    color:#000000;
+                    font-weight: bold;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

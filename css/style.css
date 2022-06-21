@@ -1,0 +1,235 @@
+/* color: map-get($coloresWeb, color1); */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+body {
+  /* background-color: $bgColor; */
+  background-color: #171717; }
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1; }
+  header .nav__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: #171717; }
+    header .nav__menu img {
+      height: 40px; }
+    header .nav__menu ul li {
+      display: inline-block;
+      width: 180px;
+      color: #d2d2d2;
+      flex-basis: auto; }
+      header .nav__menu ul li:hover {
+        /* background: #EC994B; */
+        background: #f6c91e;
+        color: #000000;
+        font-weight: bold;
+        border-radius: 5px; }
+
+footer {
+  background-color: #747474; }
+
+.footer__redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px; }
+
+.footer__ul li {
+  display: inline-block;
+  width: 180px;
+  color: #d2d2d2;
+  flex-basis: auto; }
+
+.footer__ul a img {
+  height: 20px;
+  width: 20px;
+  transition: 0.5; }
+
+.footer__ul a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  border-radius: 5px; }
+  .footer__ul a:hover li {
+    color: black; }
+
+.padre__index {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 15px; }
+  .padre__index .principal__texto {
+    margin: 50px 10px 50px 150px;
+    text-align: right; }
+    .padre__index .principal__texto .artista__nombre {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 75px;
+      font-weight: bold;
+      animation-duration: 1.5s;
+      color: #f6c91e;
+      text-shadow: 0px 5px 10px #d0d0d0; }
+    .padre__index .principal__texto .artista__intro {
+      font-size: 25px;
+      font-family: 'PT Sans Caption', sans-serif;
+      animation-duration: 2s;
+      color: #f6c91e; }
+    .padre__index .principal__texto .artista__fecha {
+      margin-top: 150px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 50px;
+      font-weight: bold;
+      animation-duration: 2.5s;
+      color: #fafaec;
+      text-shadow: 2px 2px 10px #f6c91e; }
+  .padre__index .principal__imagen {
+    margin: 50px 150px 150px 0px; }
+    .padre__index .principal__imagen img {
+      border: 3px solid whitesmoke;
+      border-radius: 8px;
+      width: 100%;
+      height: auto; }
+
+.section__Upcoming {
+  margin: 0px 40px 20px 40px; }
+
+.grid__eventosAnteriores {
+  display: grid;
+  grid-template-areas: "vid vid";
+  grid-gap: 5px; }
+  .grid__eventosAnteriores .cont__eventosPasados {
+    grid-area: vid;
+    display: contents;
+    text-align: center; }
+    .grid__eventosAnteriores .cont__eventosPasados .evento {
+      border-top: 2px solid gray;
+      border-bottom: 2px solid gray;
+      margin: 20px 20px; }
+      .grid__eventosAnteriores .cont__eventosPasados .evento .textoEvento {
+        color: #f6c91e;
+        font-size: 32px;
+        font-family: 'PT Sans Caption', sans-serif; }
+        .grid__eventosAnteriores .cont__eventosPasados .evento .textoEvento p {
+          color: #d0d0d0;
+          font-size: 16px;
+          font-family: 'Josefin Sans', sans-serif; }
+      .grid__eventosAnteriores .cont__eventosPasados .evento .videoEvento {
+        width: auto; }
+        .grid__eventosAnteriores .cont__eventosPasados .evento .videoEvento iframe {
+          border-radius: 10px;
+          height: 400px;
+          width: 100%; }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "titulo map" "form   map";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 8fr;
+  gap: 50px;
+  margin: 50px 75px; }
+  .contenedor .contacto__Titulo {
+    color: #f6c91e;
+    font-size: 32px;
+    font-family: 'PT Sans Caption', sans-serif;
+    grid-area: titulo;
+    padding-left: 100px; }
+  .contenedor .form__contacto {
+    grid-area: form; }
+    .contenedor .form__contacto label {
+      color: #d0d0d0;
+      font-size: 16px;
+      font-family: 'Josefin Sans', sans-serif;
+      color: white; }
+    .contenedor .form__contacto textarea {
+      height: 180px; }
+    .contenedor .form__contacto .botonReset, .contenedor .form__contacto .botonEnviar {
+      border: none;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #747474; }
+    .contenedor .form__contacto .botonEnviar {
+      background-color: #f6c91e; }
+  .contenedor .mapsGoogle {
+    grid-area: map;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; }
+
+.sobreNosotros {
+  margin: 50px 150px;
+  border-bottom: solid 2px black; }
+  .sobreNosotros .sn__titulo {
+    color: #f6c91e;
+    font-size: 32px;
+    font-family: 'PT Sans Caption', sans-serif;
+    margin: 50px 800px 50px 100px; }
+  .sobreNosotros .sn__parrafo {
+    color: #d0d0d0;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 50px; }
+  .sobreNosotros .sn_img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px; }
+
+@media screen and (max-width: 768px) {
+  /* Pagina Principal (Index.html) */
+  .nav__menu ul {
+    align-items: center; }
+    .nav__menu ul li {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+  .padre__index {
+    display: block; }
+    .padre__index .principal__texto {
+      margin-right: 50px; }
+      .padre__index .principal__texto .artista__nombre {
+        font-size: 55px; }
+      .padre__index .principal__texto .artista__intro {
+        font-size: 20px; }
+      .padre__index .principal__texto .artista__fecha {
+        font-size: 45px; }
+    .padre__index .principal__imagen {
+      margin-left: 50px;
+      margin-right: 50px; } }
+
+/* Media Query Display = Movil */
+@media screen and (max-width: 320px) {
+  /* Menu de Navegacion */
+  .nav__menu {
+    flex-direction: column; }
+    .nav__menu ul {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+  /* Footer */
+  .footer__redes {
+    font-size: 12px; }
+    .footer__redes .footer__ul {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  /* Pagina Principal (Index.html) */
+  .padre__index {
+    display: flex;
+    flex-wrap: wrap; }
+    .padre__index .principal__texto {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 5px 20px 10px;
+      text-align: center;
+      font-size: 18px; }
+    .padre__index .principal__imagen {
+      margin: 10px 10px; } }
