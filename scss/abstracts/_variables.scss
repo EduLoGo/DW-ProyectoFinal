@@ -4,12 +4,10 @@ $colorLogo: #EC994B;
 $textoMenu: #d2d2d2;
 $textoFooter: #000b3c;
 
-$coloresWeb: ( /*Declaramos nuestro mapa*/
+$coloresWeb: ( /*Mapa con paleta de colores de la Pagina*/
     color1: #fafaec,
     color2: #d0d0d0,
     color3: #f6c91e,
     color4: #747474,
     color5: #171717,
-); 
-
-/* color: map-get($coloresWeb, color1); */
+)

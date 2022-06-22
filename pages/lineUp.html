@@ -13,6 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Link Animaciones Texto -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link a la pagina de Estilos (CSS)-->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Titulo de la Web a Mostrar -->
@@ -35,8 +37,9 @@
         </div>
     </header>
     <main>
+        <p class="lineup__titulo animate__animated animate__zoomInDown">Line Up</p>
         <section class="lineup__contenedor">
-            <div class="artistaA">
+            <div class="artistaA" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
                 <div class="lineup__carta">
                     <div class="imgBox">
                         <img src="../img/artist/Solardo-BW.jpg" alt="">
@@ -44,7 +47,7 @@
                     </div>
                     <div class="details">
                         <div class="content">
-                            <h2>SOLARDO<br><span><!-- Solardo --></span></h2>
+                            <h2>SOLARDO<br><span>Set Time <br>## a ##</span></h2>
                             <div class="social-icons">
                                 <a href="https://www.instagram.com/solardosound/" target="_blank"><img src="../img/Instagram.png" alt="Logo-Instagram"></a>
                             </div>
@@ -52,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artistaB">
+            <div class="artistaB" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
                 <div class="lineup__carta">
                     <div class="imgBox">
                         <img src="../img/artist/Jackie-BW.jpg" alt="">
@@ -60,7 +63,7 @@
                     </div>
                     <div class="details">
                         <div class="content">
-                            <h2>JACKMOOD<br><span><!-- Jackie --></span></h2>
+                            <h2>JACKMOOD<br><span>Set Time <br>## a ##</span></h2>
                             <div class="social-icons">
                                 <a href="https://www.instagram.com/jackmood.wav/" target="_blank"><img src="../img/Instagram.png" alt="Logo-Instagram"></a>
                             </div>
@@ -68,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artistaC">
+            <div class="artistaC" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                 <div class="lineup__carta">
                     <div class="imgBox">
                         <img src="../img/artist/FelipeBittel-BW.jpg" alt="">
@@ -76,7 +79,7 @@
                     </div>
                     <div class="details">
                         <div class="content">
-                            <h2>FELIPE BITTEL<br><span><!-- Feli Bittel --></span></h2>
+                            <h2>FELIPE BITTEL<br><span>Set Time <br>## a ##</span></h2>
                             <div class="social-icons">
                                 <a href="https://www.instagram.com/felipe.bittel/" target="_blank"><img src="../img/Instagram.png" alt="Logo-Instagram"></a>
                             </div>
@@ -84,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artistaD">
+            <div class="artistaD" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                 <div class="lineup__carta">
                     <div class="imgBox">
                         <img src="../img/artist/ROD-BW.jpg" alt="">
@@ -92,7 +95,7 @@
                     </div>
                     <div class="details">
                         <div class="content">
-                            <h2>R.O.D.<br><span><!-- R.O.D. --></span></h2>
+                            <h2>R.O.D.<br><span>Set Time <br>## a ##</span></h2>
                             <div class="social-icons">
                                 <a href="https://www.instagram.com/r.o.d.music/" target="_blank"><img src="../img/Instagram.png" alt="Logo-Instagram"></a>
                             </div>
@@ -111,5 +114,7 @@
             </ul>
         </div>            
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

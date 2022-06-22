@@ -1,6 +1,6 @@
 .sobreNosotros{
     margin: 50px 150px;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px map-get($coloresWeb, color3);
     .sn__titulo{
         @include textoTit;
         margin: 50px 800px 50px 100px;
@@ -8,7 +8,6 @@
     .sn__parrafo{
         @include textoDef;
         margin: 50px;    
-        
     }
     .sn_img{
         display: flex;

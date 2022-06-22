@@ -1,11 +1,9 @@
-/* color: map-get($coloresWeb, color1); */
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box; }
 
 body {
-  /* background-color: $bgColor; */
   background-color: #171717; }
 
 header {
@@ -22,15 +20,15 @@ header {
       height: 40px; }
     header .nav__menu ul li {
       display: inline-block;
-      width: 180px;
-      color: #d2d2d2;
-      flex-basis: auto; }
+      width: 175px;
+      color: #fafaec;
+      flex-basis: auto;
+      transition: 0.5s; }
       header .nav__menu ul li:hover {
-        /* background: #EC994B; */
         background: #f6c91e;
-        color: #000000;
+        color: #171717;
         font-weight: bold;
-        border-radius: 5px; }
+        border-radius: 50px 0px 50px 0px; }
 
 footer {
   background-color: #747474; }
@@ -45,21 +43,23 @@ footer {
 
 .footer__ul li {
   display: inline-block;
-  width: 180px;
-  color: #d2d2d2;
-  flex-basis: auto; }
+  width: 140px;
+  color: #d0d0d0;
+  flex-basis: auto;
+  transition: 0.2s; }
 
 .footer__ul a img {
   height: 20px;
   width: 20px;
-  transition: 0.5; }
+  margin-left: 30px;
+  margin-bottom: 5px; }
 
 .footer__ul a:hover {
-  text-decoration: underline;
+  background: #d0d0d0;
   font-weight: bold;
-  border-radius: 5px; }
+  border-radius: 40px 10px 10px 40px; }
   .footer__ul a:hover li {
-    color: black; }
+    color: #171717; }
 
 .padre__index {
   display: grid;
@@ -93,14 +93,13 @@ footer {
   .padre__index .principal__imagen {
     margin: 50px 150px 150px 0px; }
     .padre__index .principal__imagen img {
-      border: 3px solid whitesmoke;
+      border: 4px solid #fafaec;
       border-radius: 8px;
       width: 100%;
-      height: auto; }
+      height: auto;
+      box-shadow: 10px 15px 20px #f6cb1e3b; }
 
-.section__Upcoming {
-  margin: 0px 40px 20px 40px; }
-
+/* @import "./pages/upcoming.scss"; */
 .grid__eventosAnteriores {
   display: grid;
   grid-template-areas: "vid vid";
@@ -110,12 +109,12 @@ footer {
     display: contents;
     text-align: center; }
     .grid__eventosAnteriores .cont__eventosPasados .evento {
-      border-top: 2px solid gray;
-      border-bottom: 2px solid gray;
+      border-top: 2px solid #747474;
+      border-bottom: 2px solid #d0d0d0;
       margin: 20px 20px; }
       .grid__eventosAnteriores .cont__eventosPasados .evento .textoEvento {
         color: #f6c91e;
-        font-size: 32px;
+        font-size: 38px;
         font-family: 'PT Sans Caption', sans-serif; }
         .grid__eventosAnteriores .cont__eventosPasados .evento .textoEvento p {
           color: #d0d0d0;
@@ -136,10 +135,10 @@ footer {
   gap: 50px;
   margin: 50px 75px; }
   .contenedor .contacto__Titulo {
-    color: #f6c91e;
-    font-size: 32px;
-    font-family: 'PT Sans Caption', sans-serif;
     grid-area: titulo;
+    color: #f6c91e;
+    font-size: 38px;
+    font-family: 'PT Sans Caption', sans-serif;
     padding-left: 100px; }
   .contenedor .form__contacto {
     grid-area: form; }
@@ -147,7 +146,7 @@ footer {
       color: #d0d0d0;
       font-size: 16px;
       font-family: 'Josefin Sans', sans-serif;
-      color: white; }
+      color: #fafaec; }
     .contenedor .form__contacto textarea {
       height: 180px; }
     .contenedor .form__contacto .botonReset, .contenedor .form__contacto .botonEnviar {
@@ -167,10 +166,10 @@ footer {
 
 .sobreNosotros {
   margin: 50px 150px;
-  border-bottom: solid 2px black; }
+  border-bottom: solid 2px #f6c91e; }
   .sobreNosotros .sn__titulo {
     color: #f6c91e;
-    font-size: 32px;
+    font-size: 38px;
     font-family: 'PT Sans Caption', sans-serif;
     margin: 50px 800px 50px 100px; }
   .sobreNosotros .sn__parrafo {
@@ -183,12 +182,27 @@ footer {
     justify-content: center;
     margin-bottom: 100px; }
 
+.lineup__titulo {
+  color: #f6c91e;
+  font-size: 38px;
+  font-family: 'PT Sans Caption', sans-serif;
+  margin: 50px 0px;
+  text-align: center; }
+
 .lineup__contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 50px;
   justify-items: center;
   margin: 50px 100px; }
+
+.artistaA, .artistaB, .artistaC, .artistaD {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #f6c91e;
+  border-bottom: 2px solid #f6c91e;
+  width: 60%;
+  padding: 15px; }
 
 .lineup__carta {
   position: relative;
@@ -197,7 +211,7 @@ footer {
   background: #747474;
   transform-style: preserve-3d;
   transform: perspective(1000px);
-  box-shadow: 10px 20px 20px #f6c91e 0, 0, 0, 0.25;
+  box-shadow: 5px 5px 10px rgba(208, 208, 208, 0.25);
   transition: 1s; }
   .lineup__carta:hover {
     transform: translateX(50%); }
@@ -212,7 +226,7 @@ footer {
     transform-style: preserve-3d;
     background: #000;
     transition: 1s;
-    box-shadow: 10px 20px 20px #f6c91e 0, 0, 0, 0.25; }
+    box-shadow: 5px 5px 10px rgba(208, 208, 208, 0.25); }
     .lineup__carta .imgBox img {
       position: absolute;
       top: 0;
@@ -241,14 +255,14 @@ footer {
       flex-direction: column; }
       .lineup__carta .details .content h2 {
         color: #f6c91e;
-        font-size: 32px;
+        font-size: 38px;
         font-family: 'PT Sans Caption', sans-serif;
         text-align: center;
         font-weight: 700;
         line-height: 1em; }
         .lineup__carta .details .content h2 span {
-          color: #e21212;
-          font-size: 0.8em; }
+          color: #171717;
+          font-size: 0.5em; }
       .lineup__carta .details .content .social-icons {
         position: relative;
         display: flex;
@@ -270,6 +284,7 @@ footer {
           .lineup__carta .details .content .social-icons a:hover {
             background-color: #f6c91e; }
 
+/* Media Queries para Tablet */
 @media screen and (max-width: 768px) {
   /* Pagina Principal (Index.html) */
   .nav__menu ul {
@@ -290,9 +305,44 @@ footer {
         font-size: 45px; }
     .padre__index .principal__imagen {
       margin-left: 50px;
-      margin-right: 50px; } }
+      margin-right: 50px; }
+  /* Pagina Line UP (lineUp.html) */
+  .lineup__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .artistaA, .artistaB, .artistaC, .artistaD, .artistaB, .artistaC, .artistaD {
+    width: 100%; }
+  /* Pagina Eventos Anteriores (lookingBack.html) */
+  .grid__eventosAnteriores {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .grid__eventosAnteriores .evento {
+      width: 90%; }
+  /* Pagina Sobre Nosotros (about.html) */
+  .sobreNosotros {
+    margin: 5px 15px; }
+    .sobreNosotros .sn__titulo {
+      margin: 30px 100px 30px 100px;
+      font-size: 28px; }
+    .sobreNosotros .sn_img {
+      margin-bottom: 50px; }
+      .sobreNosotros .sn_img img {
+        width: 90%;
+        height: auto; }
+  /* Pagina Contacto (contact.html) */
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; }
+    .contenedor .contacto__Titulo {
+      padding-left: 10px; }
+    .contenedor .mapsGoogle {
+      width: auto;
+      height: 400px; } }
 
-/* Media Query Display = Movil */
+/* Media Queries para Movil */
 @media screen and (max-width: 320px) {
   /* Menu de Navegacion */
   .nav__menu {
@@ -319,4 +369,26 @@ footer {
       text-align: center;
       font-size: 18px; }
     .padre__index .principal__imagen {
-      margin: 10px 10px; } }
+      margin: 10px 10px; }
+  /* Pagina Line Up (lineUp.html) */
+  .lineup__contenedor {
+    margin: 5px 10px; }
+  .artistaA, .artistaB, .artistaC, .artistaD, .artistaB, .artistaC, .artistaD {
+    width: 100%; }
+  .lineup__carta:hover {
+    transform: translateX(0%); }
+    .lineup__carta:hover .imgBox {
+      transform: rotateY(-90deg); }
+  /* Pagina Eventos Anteriores (lookingBack.html) */
+  /* Pagina Sobre Nosotros (about.html) */
+  .sobreNosotros {
+    margin: 0px 0px; }
+    .sobreNosotros .sn__titulo {
+      margin: 25px 0px 0px 0px;
+      text-align: center; }
+  /* Pagina Contacto (contacto.html) */
+  .contenedor {
+    margin: 15px; }
+    .contenedor .contacto__Titulo {
+      text-align: center;
+      padding-left: 0; } }

@@ -7,14 +7,14 @@
 @import "./layouts/footer";
 
 @import "./pages/index";
-@import "./pages/upcoming.scss";
+/* @import "./pages/upcoming.scss"; */
 @import "./pages/lookingBack";
 @import "./pages/contact";
 @import "./pages/about";
-
 @import "./pages/lineUp";
 
 
+    /* Media Queries para Tablet */
 @media screen and (max-width: 768px) {
     
     /* Pagina Principal (Index.html) */
@@ -47,9 +47,58 @@
             margin-right: 50px;
         }
     }
-}
 
-/* Media Query Display = Movil */
+    /* Pagina Line UP (lineUp.html) */
+    .lineup__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .artistaA, .artistaB, .artistaC, .artistaD{
+        width: 100%;
+    }
+
+    /* Pagina Eventos Anteriores (lookingBack.html) */
+    .grid__eventosAnteriores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .evento{
+            width: 90%;
+        }
+    }
+
+    /* Pagina Sobre Nosotros (about.html) */
+    .sobreNosotros{
+        margin: 5px 15px;
+        .sn__titulo{
+            margin: 30px 100px 30px 100px;
+            font-size: 28px;
+        }
+        .sn_img{
+            margin-bottom: 50px;
+            img{
+            width: 90%;
+            height: auto;
+            }
+        }
+    }
+
+    /* Pagina Contacto (contact.html) */
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        .contacto__Titulo{
+            padding-left: 10px;
+        }
+        .mapsGoogle{
+            width: auto;
+            height: 400px;
+        }
+    }
+}
+    /* Media Queries para Movil */
 @media screen and (max-width: 320px) {
     /* Menu de Navegacion */
     .nav__menu{
@@ -86,6 +135,40 @@
             margin: 10px 10px;
         }
     }
-
+    /* Pagina Line Up (lineUp.html) */
     
+    .lineup__contenedor{
+        margin: 5px 10px;   
+    }
+    .artistaA, .artistaB, .artistaC, .artistaD{
+        width: 100%;
+    }
+    .lineup__carta{
+        &:hover{
+            transform: translateX(0%);
+            .imgBox{
+                transform: rotateY(-90deg);
+            }
+        }
+    }
+
+    /* Pagina Eventos Anteriores (lookingBack.html) */
+
+    /* Pagina Sobre Nosotros (about.html) */
+    .sobreNosotros{
+        margin: 0px 0px;
+        .sn__titulo{
+            margin: 25px 0px 0px 0px;
+            text-align: center;
+        }
+    }
+
+    /* Pagina Contacto (contacto.html) */
+    .contenedor{
+        margin: 15px;
+        .contacto__Titulo{
+            text-align: center;
+            padding-left: 0;
+        }
+    }    
 }

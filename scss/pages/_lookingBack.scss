@@ -7,15 +7,14 @@
         display: contents;
         text-align: center;
         .evento{
-            border-top: 2px solid gray;
-            border-bottom: 2px solid gray;
+            border-top: 2px solid map-get($coloresWeb, color4);
+            border-bottom: 2px solid map-get($coloresWeb, color2);
             margin: 20px 20px;
             .textoEvento{
                 @include textoTit;
                 p{
                     @include textoDef;
                 }
-                
             }
             .videoEvento{
                 width: auto;

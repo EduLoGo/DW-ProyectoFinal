@@ -1,3 +1,8 @@
+.lineup__titulo{
+    @include textoTit;
+    margin: 50px 0px;
+    text-align: center;
+}
 .lineup__contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -5,6 +10,24 @@
     justify-items: center;
     margin: 50px 100px;
 }
+.artistaA{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid map-get($coloresWeb, color3);
+    border-bottom: 2px solid map-get($coloresWeb, color3);
+    width: 60%;
+    padding: 15px;
+}
+.artistaB{
+    @extend .artistaA;
+}
+.artistaC{
+    @extend .artistaA;
+}
+.artistaD{
+    @extend .artistaA;
+}
+
 .lineup__carta{
     position: relative;
     width: 300px;
@@ -12,7 +35,7 @@
     background: map-get($coloresWeb, color4);
     transform-style: preserve-3d;
     transform: perspective(1000px);
-    box-shadow: 10px 20px 20px #f6c91e(0,0,0,0.25);
+    box-shadow: 5px 5px 10px rgba(208, 208, 208, 0.25);
     transition: 1s;
     &:hover{
         transform: translateX(50%);
@@ -29,7 +52,7 @@
         transform-style: preserve-3d;
         background: #000;
         transition: 1s;
-        box-shadow: 10px 20px 20px #f6c91e(0,0,0,0.25);
+        box-shadow: 5px 5px 10px rgba(208, 208, 208, 0.25);
         img{
             position: absolute;
             top: 0;
@@ -65,8 +88,8 @@
                 font-weight: 700;
                 line-height: 1em;
                 span{
-                    color: #e21212;
-                    font-size: 0.8em;
+                    color: map-get($coloresWeb, color5);
+                    font-size: 0.5em;
                 }
             }
             .social-icons{
