@@ -63,13 +63,13 @@ footer {
 
 .padre__index {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
   grid-gap: 15px; }
   .padre__index .principal__texto {
     margin: 50px 10px 50px 150px;
     text-align: right; }
     .padre__index .principal__texto .artista__nombre {
-      margin-top: 60px;
+      margin-top: 0px;
       margin-bottom: 60px;
       font-family: 'Josefin Sans', sans-serif;
       font-size: 75px;
@@ -78,12 +78,12 @@ footer {
       color: #f6c91e;
       text-shadow: 0px 5px 10px #d0d0d0; }
     .padre__index .principal__texto .artista__intro {
-      font-size: 25px;
+      font-size: 20px;
       font-family: 'PT Sans Caption', sans-serif;
       animation-duration: 2s;
       color: #f6c91e; }
     .padre__index .principal__texto .artista__fecha {
-      margin-top: 150px;
+      margin-top: 120px;
       font-family: 'Josefin Sans', sans-serif;
       font-size: 50px;
       font-weight: bold;
@@ -165,7 +165,7 @@ footer {
     margin-bottom: 50px; }
 
 .sobreNosotros {
-  margin: 50px 150px;
+  margin: 50px;
   border-bottom: solid 2px #f6c91e; }
   .sobreNosotros .sn__titulo {
     color: #f6c91e;
@@ -287,6 +287,8 @@ footer {
 /* Media Queries para Tablet */
 @media screen and (max-width: 768px) {
   /* Pagina Principal (Index.html) */
+  header {
+    position: relative; }
   .nav__menu ul {
     align-items: center; }
     .nav__menu ul li {
@@ -343,8 +345,10 @@ footer {
       height: 400px; } }
 
 /* Media Queries para Movil */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   /* Menu de Navegacion */
+  header {
+    position: relative; }
   .nav__menu {
     flex-direction: column; }
     .nav__menu ul {

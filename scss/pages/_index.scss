@@ -1,12 +1,12 @@
 .padre__index{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
     grid-gap: 15px;
     .principal__texto{
         margin: 50px 10px 50px 150px;
         text-align:right;
         .artista__nombre{
-            margin-top: 60px;
+            margin-top: 0px;
             margin-bottom: 60px;
             font-family: 'Josefin Sans', sans-serif;
             font-size: 75px;
@@ -16,13 +16,13 @@
             text-shadow: 0px 5px 10px map-get($coloresWeb,color2);
         }
         .artista__intro{
-            font-size: 25px;
+            font-size: 20px;
             font-family: 'PT Sans Caption', sans-serif;
             animation-duration: 2s;
             color: map-get($coloresWeb, color3);
         }
         .artista__fecha{
-            margin-top: 150px;
+            margin-top: 120px;
             font-family: 'Josefin Sans', sans-serif;
             font-size: 50px;
             font-weight: bold;

@@ -18,6 +18,9 @@
 @media screen and (max-width: 768px) {
     
     /* Pagina Principal (Index.html) */
+    header{
+        position: relative;
+    }
     .nav__menu{
         ul{
             align-items: center;        
@@ -99,8 +102,11 @@
     }
 }
     /* Media Queries para Movil */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
     /* Menu de Navegacion */
+    header{
+        position: relative;
+    }
     .nav__menu{
         flex-direction: column;
         ul{

@@ -1,5 +1,5 @@
 .sobreNosotros{
-    margin: 50px 150px;
+    margin: 50px;
     border-bottom: solid 2px map-get($coloresWeb, color3);
     .sn__titulo{
         @include textoTit;
