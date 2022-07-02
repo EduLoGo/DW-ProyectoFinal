@@ -2,27 +2,39 @@ header{
     position: sticky;
     top: 0px;
     z-index: 1 ;
+    .navbar{
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 201, 30, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    }
     .nav__menu{
         display: flex;
-        justify-content: space-evenly;
-        align-items:center;
-        text-align: center;
+        justify-content: space-between;
         background-color: map-get($coloresWeb, color5);
         img{
             height: 40px;
         }
-        ul{
-            li{
-                display: inline-block;
-                width:175px;
-                color: map-get($coloresWeb, color1);
-                flex-basis: auto;
-                transition: 0.5s;
-                &:hover{
-                    background: map-get($coloresWeb, color3);
-                    color:map-get($coloresWeb, color5);
-                    font-weight: bold;
-                    border-radius: 50px 0px 50px 0px;
+        .navbar-collapse {
+            flex-grow: 0;
+        }
+        .nav__lista{
+            ul{
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width:152px;
+                    height: 26px;
+                    transition: 0.5s;
+                    &:hover{
+                        background: map-get($coloresWeb, color3);
+                        color:map-get($coloresWeb, color5);
+                        border-radius: 50px 0px 50px 0px;
+                    }
+                    a{
+                        color: map-get($coloresWeb, color1);
+                        &:hover{
+                            color:map-get($coloresWeb, color5);
+                        }
+                    }
                 }
             }
         }

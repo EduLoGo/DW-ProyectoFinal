@@ -20,17 +20,22 @@
     /* Pagina Principal (Index.html) */
     header{
         position: relative;
-    }
-    .nav__menu{
-        ul{
-            align-items: center;        
-            li{
-                display:flex;
-                flex-direction: column;
-                width: 100%;
+        .nav__menu{
+            ul{
+                align-items: center;        
+                li{
+                    display:flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
             }
         }
+        .navbar-nav{
+            align-items: center;
+        }
     }
+    
+    
     .padre__index{
         display: block;
         .principal__texto{
@@ -104,15 +109,16 @@
     /* Media Queries para Movil */
 @media screen and (max-width: 576px) {
     /* Menu de Navegacion */
-    header{
-        position: relative;
+    nav{
+        /* position: relative; */
     }
-    .nav__menu{
-        flex-direction: column;
+    .nav__lista{
         ul{
-            display: flex;
-            justify-content: center;
-            width:100%;
+            li{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
         }
     }
 
