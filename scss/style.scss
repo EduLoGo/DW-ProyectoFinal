@@ -14,7 +14,7 @@
 
 
     /* Media Queries para Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     
     /* Pagina Principal (Index.html) */
     header{
@@ -52,19 +52,22 @@
             margin-right: 50px;
         }
     }
+        /* Pagina Line UP (lineUp.html) */
+        .lineup__titulo{
+            font-size: 28px;
+        }
+        .lineup__contenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .artistaA, .artistaB, .artistaC, .artistaD{
+            width: 100%;
+        }
+}
 
-    /* Pagina Line UP (lineUp.html) */
-    .lineup__titulo{
-        font-size: 28px;
-    }
-    .lineup__contenedor{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .artistaA, .artistaB, .artistaC, .artistaD{
-        width: 100%;
-    }
+@media screen and (max-width: 768px) {
+
 
     /* Pagina Eventos Anteriores (lookingBack.html) */
     .grid__eventosAnteriores{

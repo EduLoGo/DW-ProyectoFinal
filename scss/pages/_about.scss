@@ -3,7 +3,7 @@
     border-bottom: solid 2px map-get($coloresWeb, color3);
     .sn__titulo{
         @include textoTit;
-        margin: 50px 800px 50px 100px;
+        margin: 50px 200px 50px 100px;
     }
     .sn__parrafo{
         @include textoDef;
@@ -13,6 +13,9 @@
         display: flex;
         justify-content: center;
         margin-bottom: 100px;
+        img{
+            width: 90%;
+        };
     }
 }
 
