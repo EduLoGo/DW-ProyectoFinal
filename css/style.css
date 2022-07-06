@@ -7,6 +7,7 @@ body {
   background-color: #171717; }
 
 header {
+  background: #171717;
   position: sticky;
   top: 0px;
   z-index: 1; }
@@ -106,13 +107,19 @@ footer {
       height: auto;
       box-shadow: 10px 15px 20px #f6cb1e3b; }
 
-/* @import "./pages/upcoming.scss"; */
 .grid__eventosAnteriores {
   display: grid;
-  grid-template-areas: "vid vid";
+  grid-template-areas: "title title" "video video";
   grid-gap: 5px; }
+  .grid__eventosAnteriores .eventos__titulo {
+    color: #f6c91e;
+    font-size: 38px;
+    font-family: 'PT Sans Caption', sans-serif;
+    grid-area: title;
+    display: flex;
+    margin: 50px 100px 20px 100px; }
   .grid__eventosAnteriores .cont__eventosPasados {
-    grid-area: vid;
+    grid-area: video;
     display: contents;
     text-align: center; }
     .grid__eventosAnteriores .cont__eventosPasados .evento {
@@ -133,6 +140,15 @@ footer {
           border-radius: 10px;
           height: 400px;
           width: 100%; }
+
+.cont__carousel {
+  padding-bottom: 50px; }
+  .cont__carousel .carousel__titulo {
+    color: #f6c91e;
+    font-size: 38px;
+    font-family: 'PT Sans Caption', sans-serif;
+    margin: 30px 0px;
+    text-align: center; }
 
 .contenedor {
   display: grid;
@@ -193,7 +209,7 @@ footer {
   color: #f6c91e;
   font-size: 38px;
   font-family: 'PT Sans Caption', sans-serif;
-  margin: 50px 0px;
+  margin: 30px 0px;
   text-align: center; }
 
 .lineup__contenedor {
@@ -318,6 +334,8 @@ footer {
       margin-left: 50px;
       margin-right: 50px; }
   /* Pagina Line UP (lineUp.html) */
+  .lineup__titulo {
+    font-size: 28px; }
   .lineup__contenedor {
     display: flex;
     flex-direction: column;
@@ -329,8 +347,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .grid__eventosAnteriores .eventos__titulo {
+      font-size: 28px;
+      margin: 30px 0px; }
     .grid__eventosAnteriores .evento {
       width: 90%; }
+  .cont__carousel .carousel__titulo {
+    font-size: 28px; }
   /* Pagina Sobre Nosotros (about.html) */
   .sobreNosotros {
     margin: 5px 15px; }
@@ -356,8 +379,6 @@ footer {
 /* Media Queries para Movil */
 @media screen and (max-width: 576px) {
   /* Menu de Navegacion */
-  nav {
-    /* position: relative; */ }
   .nav__lista ul li {
     display: flex;
     justify-content: center;
@@ -390,7 +411,6 @@ footer {
     transform: translateX(0%); }
     .lineup__carta:hover .imgBox {
       transform: rotateY(-90deg); }
-  /* Pagina Eventos Anteriores (lookingBack.html) */
   /* Pagina Sobre Nosotros (about.html) */
   .sobreNosotros {
     margin: 0px 0px; }
